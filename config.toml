@@ -1,0 +1,15 @@
+languageCode = "en-us"
+title = "ctf writeups"
+theme = "phantasm"
+canonifyurls = false
+
+[params]
+name = "ctfwaifu"
+author = "ctfwaifu"
+aboutAuthor = "Ctf player"
+logoPath = "logo.jpg"
+avatarPath = "avatar.jpg"
+bio = "Ctf player"
+email = "ctfwaifu@pm.me"
+copyright = "© dont copy me lol ... this is a shitty site XD"
+tag = "tags"
