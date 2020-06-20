@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+		<head>
+				{{ partial "head.html" . }}
+		</head>
+		<body>
+				<!-- Add your site or application content here -->
+				<section id="wrapper" class="home">
+					{{ partial "profile.html" . }}
+					{{ partial "post-list.html"  . }}
+					{{ partial "pagination.html" . }}
+				</section><section id="sidebar-1">
+					<section class="section about">
+						<h1>About</h1>
+						<p class="clearfix">
+							<img class="avatar-inline" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatarPath }}"/>
+							hi, I'm a ctf player.
+						</p>
+					</section>
+					<section class="section topics">
+						<h1>Topics</h1>
+						{{ partial "topic-list.html" . }}
+					</section>
+					</section><section id="sidebar-2">
+					<section class="section social">
+						<h1>Social</h1>
+						<ul class="unstyled">
+							<li><a class="external" href="https://github.com/ctfwaifu">GitHub</a></li>
+							<li><a class="external" href="https://ctftime.org/user/83569">Ctftime</a></li>
+							<li><a class="external" href="https://twitter.com/ctfwaifu">Twitter</a></li>
+						</ul>
+					</section>
+				</section>
+				<section id="wrapper-footer" class="home">
+					{{ partial "footer.html" . }}
+				</section>
+		</body>
+</html>
